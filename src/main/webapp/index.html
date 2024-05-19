@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация на занятия</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="img">
+</head>
+<body style="background-color: #f279ff">
+<form action="RegServlet" method="get">
+    <div style="margin-left: 44%;margin-top: 10px;">
+        <button type="submit" value="Submit" class="btn btn-primary" style="background-color: #e425f2; border: 1px solid #1a1d20;">Посмотреть таблицы</button>
+    </div>
+</form>
+<div>
+    <h4  class="input-group mb-3" style="width: 20rem; margin: auto; margin-top: 150px;">Заполните анкету ребенка</h4>
+    <form action="RegServlet" method="post">
+    <div class="input-group mb-3" style="width: 50rem; margin: auto;">
+        <span class="input-group-text" id="inputGroup-sizing-default1"  style="background-color: #f69ef9; border: 1px solid #1a1d20;width: 150px; text-align: center;">Имя</span>
+        <input type="text" id="name" name="name" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" style=" background-color: #f69ef9; border: 1px solid #1a1d20">
+    </div>
+    <div class="input-group mb-3" style="width: 50rem; margin: auto;">
+        <span class="input-group-text" id="inputGroup-sizing-default2"  style="background-color: #f69ef9; border: 1px solid #1a1d20;width: 150px; text-align: center;">Фамилия</span>
+        <input type="text" id="lastname" name="lastname" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" style=" background-color: #f69ef9; border: 1px solid #1a1d20">
+    </div>
+    <div class="input-group mb-3" style="width: 50rem; margin: auto;">
+        <span class="input-group-text" id="inputGroup-sizing-default3"  style="background-color: #f69ef9; border: 1px solid #1a1d20;width: 150px; text-align: center;">Возраст</span>
+        <input type="number" id="age" name="age" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" style=" background-color: #f69ef9; border: 1px solid #1a1d20">
+    </div>
+    <div class="input-group mb-3" style="width: 50rem; margin: auto;">
+        <span class="input-group-text" id="inputGroup-sizing-default4"  style="background-color: #f69ef9; border: 1px solid #1a1d20;width: 150px; text-align: center;">Напрвление</span>
+        <input  type="text" id="nap" name="nap" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" style=" background-color: #f69ef9; border: 1px solid #1a1d20">
+    </div>
+    <div class="input-group mb-3" style="width: 50rem; margin: auto;">
+        <span class="input-group-text" id="inputGroup-sizing-default5"  style="background-color: #f69ef9; border: 1px solid #1a1d20;width: 150px; text-align: center;">Телефон</span>
+        <input  type="text" id="telephone_number" name="telephone_number" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" style=" background-color: #f69ef9; border: 1px solid #1a1d20">
+    </div>
+    <div style="margin-left: 47%;margin-top: 50px;">
+        <form action="RegServlet" method="get">
+            <button type="submit" value="Submit" class="btn btn-primary" style="background-color: #f69ef9; border: 1px solid #1a1d20;">Отправить</button>
+        </form>
+    </div>
+    </form>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
